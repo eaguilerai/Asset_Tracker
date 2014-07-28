@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 101 Template</title>
+
+        <!-- Bootstrap -->
+        <link href="bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Global style -->
+        <link href="style/global.css" rel="stylesheet">
+
+        <style type="text/css">
+            .try-it-out #content {
+                width: 18cm;
+                border: thin solid black;
+            }
+            .try-it-out .form-group-name {
+                font-size: 14pt;
+            }
+            .try-it-out header {
+                height: 3cm;
+                width: 100%;
+                background: #4288CA;
+                color: white;
+            }
+            .try-it-out #organization-profile {
+                clear: left;
+            }
+            .try-it-out .gender-group {
+                padding-top: 2mm;
+            }
+            .try-it-out .gender-group .radio {
+                width: 3cm;
+                //border: thin solid black;
+                margin: auto;
+            }
+            .try-it-out input[type=radio] {
+                width: 1em;
+                height: 1em;
+            }
+            .try-it-out .radio label {
+                font-size: 14pt;
+                vertical-align: top;
+                //line-height: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="try-it-out">
+            <header>
+                <div class="container">
+                    <h1>Trial registration form</h1>
+                </div>
+            </header>
+
+            <div id="content" class="container">
+                <form>
+                    <div id="personal-profile">
+                        <h2>Personal profile</h2>
+                        <hr />
+                        <div class="form-group two-columns-item two-columns-first">
+                            <input type="text" class="form-control" placeholder="First name" required />
+                        </div>
+                        <div class="form-group two-columns-item two-columns-second">
+                            <input type="text" class="form-control" placeholder="Last name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required />
+                        </div>
+                        <div class="form-group input-group-addon two-columns-item two-columns-first">
+                            <label for="birthdate">Birth date</label>
+                            <input id="birthdate" type="date" class="form-control" required />
+                        </div>
+                        <div class="gender-group two-columns-item two-columns-second">
+                            <div class="radio">
+                                <label><input type="radio" name="gender" />&nbsp;Male</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="gender" />&nbsp;Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="organization-profile">
+                        <h2>Organization profile</h2>
+                        <hr />
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" required autofocus />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Phone" required />
+                        </div>
+                        <div id="form-group" class="form-group form-inline">
+                            <select id="country" class="form-control" required>
+                                <option>Country</option>
+                                <option>Honduras</option>
+                                <option>United States</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="Phone" required />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
